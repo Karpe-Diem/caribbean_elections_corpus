@@ -37,6 +37,11 @@ The public corpus will contain platform-provided comment or post identifiers, co
 
 Researchers will be expected to retrieve content that remains publicly available through the relevant platform interface or API, subject to the platform's access requirements and terms.
 
+## Documentation
+
+- [Public emoji annotation codebook](docs/CEC_codebook_v1.17_public.docx): the coding procedure, category system, operational definitions, decision rules, and reliability protocol used for the public annotations.
+- [Machine-readable annotation code list](data/metadata/annotation_codes.csv): the permitted primary- and secondary-function codes and their definitions.
+
 ## Status
 
 This repository and corpus are under development. No public dataset release is currently available.

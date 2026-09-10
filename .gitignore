@@ -1,0 +1,17 @@
+# macOS
+.DS_Store
+
+# Visual Studio Code workspace settings
+.vscode/
+
+# Python-generated files and local environments
+__pycache__/
+*.py[cod]
+.venv/
+.env
+
+# Private research data — never commit
+/private/
+/data/raw/
+/data/private/
+/data/restricted/

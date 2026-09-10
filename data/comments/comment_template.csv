@@ -1,1 +1,1 @@
-platform,election_site,event_type,election_date,source_id,author_id,comment_id,platform_comment_id,published,likes_count,reply_count,metrics_last_observed
+platform,election_site,event_type,election_date,source_id,author_id,comment_id,platform_comment_id,published,emoji_count,likes_count,reply_count,metrics_last_observed

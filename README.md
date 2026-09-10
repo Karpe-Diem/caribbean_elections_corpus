@@ -23,10 +23,7 @@ The corpus remains under development and may be extended through later versioned
 Data are collected from election-related content published on:
 
 - YouTube
-- TikTok
 - Facebook
-- Instagram
-- X
 
 Source accounts include news organizations, political parties, politicians, and other relevant public accounts.
 

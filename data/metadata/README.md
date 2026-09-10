@@ -4,13 +4,14 @@ This directory contains documentation describing the files and variables used in
 
 ## Data dictionary
 
-`data_dictionary.csv` defines each column used in the private master file and the publicly released comment files.
+`data_dictionary.csv` defines each column used in the private master file and in the publicly released comment, index, and metadata files.
 
 The data dictionary contains the following fields:
 
 - `column_name`: Exact column header used in the corpus.
 - `file_scope`: Indicates where the column is used.
   - `both`: Included in both the private master file and public release.
+  - `public_only`: Included only in publicly released index or metadata files.
   - `private_only`: Retained only in the private master file.
 - `data_type`: Expected type of data, such as text, integer, date, or datetime.
 - `format_or_values`: Required format, permitted values, or an example value.

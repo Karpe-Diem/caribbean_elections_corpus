@@ -15,3 +15,5 @@ reply_count,both,integer,"zero or greater","Visible number of replies when metri
 live_video_timestamp,private_only,text,"HH:MM:SS or blank","Position in a live video associated with the comment when available."
 image_url,private_only,text,"URL or blank","URL associated with an image in the comment; excluded from public release."
 metrics_last_observed,both,date,"YYYY-MM-DD","Date on which the engagement counts were recorded."
+comments_file,public_only,text,"repository-relative file path","Path to the public comment file associated with the source."
+annotations_file,public_only,text,"repository-relative file path or blank","Path to the public annotation file associated with the source; blank when annotations are not yet available."

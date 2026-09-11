@@ -44,8 +44,7 @@ The small annotated sample will illustrate the application of the emoji annotati
 - Each distinct Unicode emoji grapheme cluster is normally represented once per sample comment.
 - `emoji_frequency` records how many times that distinct emoji occurs.
 - `emoji_order` records the order in which distinct emojis first appear.
-- `emojipedia_category` records the Emojipedia category used during coding.
-- `emoji_type` records the researcher-defined category informed by Emojipedia.
+- `emoji_category` records the researcher-defined category informed by Emojipedia. Combined units are split into the following permitted values: `smiley`, `people`, `animals`, `nature`, `food`, `drink`, `activity`, `travel`, `places`, `objects`, `symbols`, and `flags`.
 
 ## Engagement metrics
 

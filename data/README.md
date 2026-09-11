@@ -20,13 +20,13 @@ This directory adapts the source-and-comment organization of the SENSEI Annotate
 
 ## File naming
 
-Public comment-ID files use the two-letter election-site code, election date, and abbreviated platform code:
+Public comment-ID files use the two-letter election-site code, `election` followed by the four-digit election year, and the abbreviated platform code:
 
-- `comments/{site_code}_{election_date}_{platform_code}_comments.csv`
+- `comments/{site_code}_election{year}_{platform_code}_comments.csv`
 
 For example:
 
-- `comments/jm_2025-09-03_fb_comments.csv`
+- `comments/jm_election2025_fb_comments.csv`
 
 The platform codes are `fb` for Facebook and `yt` for YouTube.
 

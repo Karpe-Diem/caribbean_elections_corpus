@@ -18,6 +18,20 @@ This directory adapts the SENSEI Annotated Corpus structure while using the ID-o
 - `listOfFiles.csv` is the source-level index connecting each `platform` and `source_id` to its comment and annotation files.
 - `../account.csv` defines the separate list of public source accounts. It is not used to map accounts to individual sources or comments.
 
+## File naming
+
+Public comment and annotation files use the two-letter election-site code, election date, and abbreviated platform code:
+
+- `comments/{site_code}_{election_date}_{platform_code}_comments.csv`
+- `annotations/{site_code}_{election_date}_{platform_code}_annotations.csv`
+
+For example:
+
+- `comments/jm_2025-09-03_fb_comments.csv`
+- `annotations/jm_2025-09-03_fb_annotations.csv`
+
+The platform codes are `fb` for Facebook and `yt` for YouTube.
+
 Researchers must retrieve comments that remain available using the relevant platform interface or API, subject to the platform's access requirements and terms.
 
 Do not place comment text, usernames, platform-provided author identifiers, profile information, direct links, exact timestamps, image URLs, or private coding fields in this directory. Public `author_id` values must be researcher-assigned pseudonyms.

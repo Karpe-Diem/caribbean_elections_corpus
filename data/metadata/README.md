@@ -46,3 +46,7 @@ Identifier columns must be stored as text to prevent spreadsheet software from r
 ## Engagement metrics
 
 `likes_count` and `reply_count` represent the values visible when the data were observed. They must be interpreted together with `metrics_last_observed`.
+
+## Election-site codes
+
+`site_codes.csv` maps the abbreviated election-site codes used in release filenames to the corresponding `election_site` values.

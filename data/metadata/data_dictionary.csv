@@ -34,5 +34,6 @@ primary_function,public_only,text,"REFERENTIAL; CONATIVE; METALINGUAL; EMOTIVE; 
 published,both,date,"YYYY-MM","Publication date at reduced precision for public release."
 reply_count,both,integer,"zero or greater","Visible number of replies when metrics were last observed."
 secondary_function,private_only,text,"zero or more controlled subcodes separated by |","Additional communicative functions used during private coding; assignments are excluded from the public annotation release, while their code definitions are published."
+site_code,public_only,text,"two-letter lowercase code","Abbreviated election-site code used in public release filenames."
 source_id,both,text,"platform-specific identifier","Platform-provided identifier of the post or video containing the comment."
 notes,public_only,text,"free text or blank","Optional contextual information about the source account or its inclusion in the corpus."

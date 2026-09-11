@@ -39,6 +39,7 @@ Researchers will be expected to retrieve content that remains publicly available
 
 ## Documentation
 
+- [`account.csv`](account.csv): public source accounts that published the posts or videos from which comments were collected. It records the platform, researcher-assigned account identifier, public account name and type, election site, collection start and end dates, and optional notes. It does not list commenter accounts or map source accounts to individual comment records.
 - [Public emoji annotation codebook](docs/CEC_codebook_v1.17_public.docx): the coding procedure, category system, operational definitions, decision rules, and reliability protocol used for the public annotations.
 - [Machine-readable annotation code list](data/metadata/annotation_codes.csv): the permitted primary- and secondary-function codes and their definitions.
 

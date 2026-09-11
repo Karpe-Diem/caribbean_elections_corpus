@@ -1,7 +1,12 @@
 column_name,file_scope,data_type,format_or_values,definition
+account_id,public_only,text,"researcher-assigned identifier; for example ACC001","Corpus-specific identifier assigned to the public account that published the source posts or videos."
+account_name,public_only,text,"publicly displayed account name","Name displayed by the public source account."
+account_type,public_only,text,"news_outlet; political_party; politician","Type of public source account."
 annotations_file,public_only,text,"repository-relative file path or blank","Path to the public annotation file associated with the source; blank when annotations are not yet available."
 author_id,both,text,"researcher-assigned pseudonym","Corpus-specific pseudonym assigned to the comment author; not a platform account identifier."
 code_level,public_only,text,"primary; secondary","Level of a code documented in annotation_codes.csv."
+collection_start_date,public_only,date,"YYYY-MM-DD","Date on which data collection from the source account began."
+collection_end_date,public_only,date,"YYYY-MM-DD or blank","Date on which data collection from the source account ended; blank while collection is ongoing."
 comment_id,both,text,"for example B001 or B001-01","Researcher-assigned corpus identifier; the suffix identifies a reply to a parent comment."
 comment,private_only,text,"free text","Original comment text; excluded from the publicly released corpus."
 comments_file,public_only,text,"repository-relative file path","Path to the public comment file associated with the source."
@@ -30,3 +35,4 @@ published,both,date,"YYYY-MM","Publication date at reduced precision for public 
 reply_count,both,integer,"zero or greater","Visible number of replies when metrics were last observed."
 secondary_function,private_only,text,"zero or more controlled subcodes separated by |","Additional communicative functions used during private coding; assignments are excluded from the public annotation release, while their code definitions are published."
 source_id,both,text,"platform-specific identifier","Platform-provided identifier of the post or video containing the comment."
+notes,public_only,text,"free text or blank","Optional contextual information about the source account or its inclusion in the corpus."

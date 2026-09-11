@@ -4,14 +4,14 @@ This directory contains documentation describing the files and variables used in
 
 ## Data dictionary
 
-`data_dictionary.csv` defines each column used in the private master file and in the publicly released comment, index, annotation, and metadata files.
+`data_dictionary.csv` defines each column used in the private master file and in the publicly released comment-ID, index, annotated-sample, and metadata files.
 
 The data dictionary contains the following fields:
 
 - `column_name`: Exact column header used in the corpus.
 - `file_scope`: Indicates where the column is used.
   - `both`: Appears in the private master comment file and in the public release.
-  - `public_only`: Appears in a public index, annotation, or metadata file but is not a column in the private master comment file.
+  - `public_only`: Appears in a public index, annotated sample, or metadata file but is not a column in the private master comment file.
   - `private_only`: Retained only in private research files and excluded from the public release.
 - `data_type`: Expected type of data, such as text, integer, date, or datetime.
 - `format_or_values`: Required format, permitted values, or an example value.
@@ -19,7 +19,7 @@ The data dictionary contains the following fields:
 
 ## Annotation codes
 
-`annotation_codes.csv` publishes the definitions of both primary and secondary function codes for methodological transparency. Public annotation records contain final adjudicated `primary_function` assignments only. The `secondary_function` assignments, coder identifiers, pre-adjudication codes, and coding memos remain in the private research files.
+`annotation_codes.csv` publishes the definitions of both primary and secondary function codes for methodological transparency. The main comment-ID corpus contains no annotation assignments. The separate annotated sample will contain final adjudicated `primary_function` assignments only. The `secondary_function` assignments, coder identifiers, pre-adjudication codes, and coding memos remain in the private research files.
 
 ## Missing values
 
@@ -34,10 +34,14 @@ Identifier columns must be stored as text to prevent spreadsheet software from r
 - `source_id` identifies the platform post or video containing the comment.
 - `author_id` is a researcher-assigned, corpus-specific pseudonym and is not a platform account identifier.
 
+## Annotated sample
+
+The small annotated sample will illustrate the application of the emoji annotation method. `sample_id` will identify sample records independently and will not link them to platform comment IDs or main-corpus comment records. `sample_text` will contain only text approved for the illustrative sample after review for quotation traceability and re-identification risk.
+
 ## Emoji annotation units
 
 - `emoji_count` records all emoji occurrences in a comment, including repetitions.
-- Each distinct Unicode emoji grapheme cluster is normally represented once in the annotation file.
+- Each distinct Unicode emoji grapheme cluster is normally represented once per sample comment.
 - `emoji_frequency` records how many times that distinct emoji occurs.
 - `emoji_order` records the order in which distinct emojis first appear.
 - `emojipedia_category` records the Emojipedia category used during coding.

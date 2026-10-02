@@ -20,7 +20,7 @@ emoji_order,public_only,integer,1 or greater,"Order of each distinct emoji in th
 emoji,public_only,text,one Unicode emoji grapheme cluster,Distinct emoji annotation unit; repeated occurrences of the same emoji are normally represented once per comment.
 emoji_category,public_only,text,smiley; people; animals; nature; food; drink; activity; travel; places; objects; symbols; flags,"Researcher-defined category assigned to the emoji, using separate categories rather than combined units."
 event_type,both,text,controlled vocabulary,Type of electoral event associated with the source.
-first_published,private_only,datetime,exact value recorded during collection,Original precise publication date and time when available.
+first_published,both,datetime,ISO 8601 date or datetime,Date and time when the source post or video was first published; the most precise publicly displayed value available may be recorded.
 follower_count,private_only,integer,zero or greater,Visible follower count for the source account when the source metadata were recorded.
 function_code,public_only,text,controlled vocabulary,Primary or secondary function code documented in annotation_codes.csv. Only primary-function assignments appear in the public annotated sample.
 function_definition,public_only,text,free text,Definition of the corresponding function_code.
@@ -40,8 +40,8 @@ source_content_included,private_only,boolean,true; false; blank if not determine
 source_title,private_only,text,free text or blank,Title displayed for the source post or video when available; excluded from the public release.
 primary_function,public_only,text,REFERENTIAL; CONATIVE; METALINGUAL; EMOTIVE; PHATIC; PERFORMATIVE; POETIC; SOCIAL/IDENTITY; SOCIAL/PRAGMATIC; STRUCTURAL; SEMANTIC ROLE,Final adjudicated dominant communicative function assigned to the emoji.
 post_id,public_only,text,platform-specific identifier,Platform-provided identifier of the public source post or video represented in the post-level manifest; corresponds to the source identifier used in private research files.
-publication_date,public_only,date,YYYY-MM-DD,Publication date displayed for the public source post or video.
-public_url,public_only,text,canonical URL,Canonical public URL for the source post or video.
+post_url,public_only,text,canonical URL,Canonical public URL for the source post or video.
+publisher_id,public_only,text,researcher-assigned identifier,Corpus-specific identifier assigned to the public account that published the source post or video.
 publisher,public_only,text,publicly displayed account name,Name of the public account that published the source post or video.
 published,private_only,date,YYYY-MM,Comment publication date at reduced precision in private research files.
 reply_count,private_only,integer,zero or greater,Visible number of replies when metrics were last observed.

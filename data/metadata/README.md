@@ -46,10 +46,10 @@ The small annotated sample will illustrate the application of the emoji annotati
 - `emoji_order` records the order in which distinct emojis first appear.
 - `emoji_category` records the researcher-defined category informed by Emojipedia. Combined units are split into the following permitted values: `smiley`, `people`, `animals`, `nature`, `food`, `drink`, `activity`, `travel`, `places`, `objects`, `symbols`, and `flags`.
 
-## Private engagement metrics
-
-`like_count` and `reply_count` represent the values visible when the private comment data were observed. They must be interpreted together with `metrics_last_observed` and are not included in the public manifest.
-
 ## Country codes
 
 `site_codes.csv` maps abbreviated site codes to the corresponding `country` values.
+
+## Private engagement metrics
+
+`like_count` and `reply_count` represent the values visible when the private comment data were observed. They must be interpreted together with `metrics_last_observed` and are not included in the public manifest.

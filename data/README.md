@@ -1,21 +1,22 @@
 # Public corpus data
 
-The public corpus is distributed as a post-level reference manifest. Comment-level spreadsheets and annotations used in the research are retained privately and are not included in repository releases. If private working copies are kept inside the local checkout, they must be stored under `data/private/`, which is excluded by `.gitignore`.
+The initial public release contains the public metadata and templates described below. Comment-level spreadsheets and annotations used in the research are retained privately and are not included in repository releases. If private working copies are kept inside the local checkout, they must be stored under `data/private/`, which is excluded by `.gitignore`.
 
-## Post-level reference manifest
+## Planned post-level reference workbooks
 
-`post_reference_manifest.csv` contains one row for each source post or video and uses these fields:
+Country-specific post-level reference workbooks are excluded from the initial release. They will be added in a subsequent version after completion and review, using these fields:
 
 - `post_id`
 - `platform`
 - `country`
 - `event_type`
 - `election_date`
+- `publisher_id`
 - `publisher`
-- `publication_date`
-- `public_url`
+- `first_published`
+- `post_url`
 
-The manifest identifies public source material; it does not contain comments or provide a mapping to private comment-level records.
+The workbooks will identify public source material; they will not contain comments or provide a mapping to private comment-level records.
 
 ## Other public files
 

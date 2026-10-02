@@ -4,7 +4,7 @@ This directory contains documentation describing the files and variables used in
 
 ## Data dictionary
 
-`data_dictionary.csv` defines each column used in the private research files and in the publicly released comment-ID, index, annotated-sample, and metadata files.
+`data_dictionary.csv` defines each column used in the private research files and in the publicly released post-reference manifest, annotated-sample, and metadata files.
 
 The data dictionary contains the following fields:
 
@@ -19,7 +19,7 @@ The data dictionary contains the following fields:
 
 ## Annotation codes
 
-`annotation_codes.csv` publishes the definitions of both primary and secondary function codes for methodological transparency. The main comment-ID corpus contains no annotation assignments. The separate annotated sample will contain final adjudicated `primary_function` assignments only. The `secondary_function` assignments, coder identifiers, pre-adjudication codes, and coding memos remain in the private research files.
+`annotation_codes.csv` publishes the definitions of both primary and secondary function codes for methodological transparency. The post-level reference manifest contains no annotation assignments. The separate annotated sample will contain final adjudicated `primary_function` assignments only. The `secondary_function` assignments, coder identifiers, pre-adjudication codes, and coding memos remain in the private research files.
 
 ## Missing values
 
@@ -29,10 +29,10 @@ A blank value means that the information was unavailable, not applicable, or cou
 
 Identifier columns must be stored as text to prevent spreadsheet software from rounding, truncating, or converting them to scientific notation.
 
-- `comment_id` is assigned by the researcher and preserves the corpus's parent-reply structure.
-- `platform_comment_id` is supplied by Facebook or YouTube.
-- `source_id` identifies the platform post or video containing the comment.
-- `author_id` is a researcher-assigned, corpus-specific pseudonym and is not a platform account identifier.
+- `post_id` identifies the public source post or video represented in the manifest.
+- `comment_id` is a private researcher-assigned identifier that preserves the parent-reply structure.
+- `platform_comment_id` is a private platform-supplied comment identifier when available.
+- `author_id` is a private researcher-assigned, corpus-specific pseudonym and is not a platform account identifier.
 
 ## Annotated sample
 
@@ -46,10 +46,10 @@ The small annotated sample will illustrate the application of the emoji annotati
 - `emoji_order` records the order in which distinct emojis first appear.
 - `emoji_category` records the researcher-defined category informed by Emojipedia. Combined units are split into the following permitted values: `smiley`, `people`, `animals`, `nature`, `food`, `drink`, `activity`, `travel`, `places`, `objects`, `symbols`, and `flags`.
 
-## Engagement metrics
+## Private engagement metrics
 
-`like_count` and `reply_count` represent the values visible when the data were observed. They must be interpreted together with `metrics_last_observed`.
+`like_count` and `reply_count` represent the values visible when the private comment data were observed. They must be interpreted together with `metrics_last_observed` and are not included in the public manifest.
 
-## Election-site codes
+## Country codes
 
-`site_codes.csv` maps the abbreviated election-site codes used in release filenames to the corresponding `election_site` values.
+`site_codes.csv` maps abbreviated site codes to the corresponding `country` values.

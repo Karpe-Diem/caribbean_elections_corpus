@@ -14,7 +14,7 @@ The scope includes sovereign states and self-governing Caribbean territories tha
 
 ## Initial collection period
 
-1 April 2025 – 31 December 2026.
+1 April 2025 – 31 May 2026.
 
 The corpus remains under development and may be extended through later versioned releases.
 

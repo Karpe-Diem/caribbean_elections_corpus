@@ -1,39 +1,56 @@
 column_name,file_scope,data_type,format_or_values,definition
-account_id,public_only,text,researcher-assigned identifier; for example ACC001,Corpus-specific identifier assigned to the public account that published the source posts or videos.
-account_name,public_only,text,publicly displayed account name,Name displayed by the public source account.
+account_id,both,text,researcher-assigned identifier; for example ACC001,Corpus-specific identifier assigned to the public account that published the source posts or videos.
+account_name,both,text,publicly displayed account name,Name displayed by the public source account.
 account_type,public_only,text,news_outlet; political_party; politician,Type of public source account.
+account_url,private_only,text,URL,Direct URL to the public account that published the source post or video; excluded from the public release.
 author_id,both,text,researcher-assigned pseudonym,Corpus-specific pseudonym assigned to the comment author; not a platform account identifier.
 code_level,public_only,text,primary; secondary,Level of a code documented in annotation_codes.csv.
 collection_start_date,public_only,date,YYYY-MM-DD,Date on which data collection from the source account began.
 collection_end_date,public_only,date,YYYY-MM-DD or blank,Date on which data collection from the source account ended; blank while collection is ongoing.
 comment_id,both,text,for example B001 or B001-01,Researcher-assigned corpus identifier; the suffix identifies a reply to a parent comment.
 comment,private_only,text,free text,Original comment text; excluded from the publicly released corpus.
+comment_count,private_only,integer,zero or greater,Visible number of comments on the source post or video when the source metadata were recorded.
 comments_file,public_only,text,repository-relative file path,Path to the public comment file associated with the source.
 election_date,both,date,YYYY-MM-DD,Official date of the relevant election.
 election_site,both,text,controlled vocabulary,Caribbean country or territory associated with the election.
+embedded_links,private_only,text,URL or blank,Link embedded in the source post or video description when available; retained only in the private source-post register.
 emoji_attributes,public_only,text,unmodified; light; medium; dark; red; orange; yellow; green; blue; purple; brown; black; white; other; blank when not applicable; multiple values separated by | in visual order,"Skin-tone attribute for an eligible human or body-part emoji, or colour variant for an emoji in the symbols category. Use unmodified when the emoji supports a skin-tone or colour attribute but no modifier or colour variant is applied; leave blank when the emoji supports neither attribute."
-emoji_count,both,integer,zero or greater,"Total number of emoji occurrences in the comment, including repeated occurrences."
+emoji_count,both,integer,zero or greater,"Total number of emoji occurrences in the comment or source text, including repeated occurrences."
 emoji_frequency,public_only,integer,1 or greater,Number of times the distinct emoji occurs in the comment.
 emoji_order,public_only,integer,1 or greater,"Order of each distinct emoji in the comment, based on its first appearance from left to right."
 emoji,public_only,text,one Unicode emoji grapheme cluster,Distinct emoji annotation unit; repeated occurrences of the same emoji are normally represented once per comment.
 emoji_category,public_only,text,smiley; people; animals; nature; food; drink; activity; travel; places; objects; symbols; flags,"Researcher-defined category assigned to the emoji, using separate categories rather than combined units."
 event_type,both,text,controlled vocabulary,Type of electoral event associated with the source.
 first_published,private_only,datetime,exact value recorded during collection,Original precise publication date and time when available.
+follower_count,private_only,integer,zero or greater,Visible follower count for the source account when the source metadata were recorded.
 function_code,public_only,text,controlled vocabulary,Primary or secondary function code documented in annotation_codes.csv. Only primary-function assignments appear in the public annotated sample.
 function_definition,public_only,text,free text,Definition of the corresponding function_code.
+gif_count,private_only,integer,zero or greater,Number of GIFs present in the source post or video.
+hashtag_count,private_only,integer,zero or greater,Number of hashtags present in the source post or video text.
+image_count,private_only,integer,zero or greater,Number of images present in the source post or video.
 image_url,private_only,text,URL or blank,URL associated with an image in the comment; excluded from public release.
-likes_count,both,integer,zero or greater,Visible number of likes or reactions when metrics were last observed.
+like_count,both,integer,zero or greater,Visible number of likes or reactions for the comment or source post or video when the metrics were observed.
 live_video_timestamp,private_only,text,HH:MM:SS or blank,Position in a live video associated with the comment when available.
 metrics_last_observed,both,date,YYYY-MM-DD,Date on which the engagement counts were recorded.
+meme_count,private_only,integer,zero or greater,Number of memes present in the source post or video.
 parent_function,public_only,text,blank for primary codes; primary function for secondary codes,Primary function under which a secondary code is organized; blank for a primary code.
 platform_comment_id,both,text,platform-specific identifier or blank,Comment identifier provided by the platform; blank when it cannot be obtained.
 platform,both,text,facebook; youtube,Social-media platform on which the comment appeared.
+source_caption,private_only,text,free text or blank,Caption or accompanying text displayed with the source post or video when available; excluded from the public release.
+source_content_included,private_only,boolean,true; false; blank if not determined,Indicates whether content from the source post or video itself was included in the corpus or analysis rather than only its comments.
+source_title,private_only,text,free text or blank,Title displayed for the source post or video when available; excluded from the public release.
 primary_function,public_only,text,REFERENTIAL; CONATIVE; METALINGUAL; EMOTIVE; PHATIC; PERFORMATIVE; POETIC; SOCIAL/IDENTITY; SOCIAL/PRAGMATIC; STRUCTURAL; SEMANTIC ROLE,Final adjudicated dominant communicative function assigned to the emoji.
 published,both,date,YYYY-MM,Publication date at reduced precision for public release.
 reply_count,both,integer,zero or greater,Visible number of replies when metrics were last observed.
 secondary_function,private_only,text,zero or more controlled subcodes separated by |,"Additional communicative functions used during private coding; case-level assignments are excluded from both the main public corpus and the public annotated sample, while their code definitions are published."
 sample_id,public_only,text,researcher-assigned identifier; for example S001,Identifier assigned to a record in the illustrative annotated sample; it is not a platform identifier and does not link the sample to a main-corpus comment record.
 sample_text,public_only,text,de-identified text,Comment text included only in the illustrative annotated sample after review for quotation traceability and re-identification risk.
+share_count,private_only,integer,zero or greater,Visible number of shares of the source post or video when the source metadata were recorded.
 site_code,public_only,text,two-letter lowercase code,Abbreviated election-site code used in public release filenames.
 source_id,both,text,platform-specific identifier,Platform-provided identifier of the post or video containing the comment.
-notes,public_only,text,free text or blank,Optional contextual information about the source account or its inclusion in the corpus.
+source_published,private_only,datetime,ISO 8601 date or datetime or blank,Publication date and time of the source post or video as recorded during collection; excluded from the public release.
+source_video_duration,private_only,text,HH:MM:SS or blank,Duration of the source video when applicable.
+source_url,private_only,text,URL,Canonical direct URL of the source post or video; retained in the private source-post register and excluded from the public release.
+sticker_count,private_only,integer,zero or greater,Number of stickers present in the source post or video.
+video_clip_count,private_only,integer,zero or greater,Number of video clips present in the source post or video.
+notes,both,text,free text or blank,Optional contextual information about a source account or source post and its inclusion in the corpus.

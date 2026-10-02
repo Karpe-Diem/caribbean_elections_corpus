@@ -4,14 +4,14 @@ This directory contains documentation describing the files and variables used in
 
 ## Data dictionary
 
-`data_dictionary.csv` defines each column used in the private master file and in the publicly released comment-ID, index, annotated-sample, and metadata files.
+`data_dictionary.csv` defines each column used in the private research files and in the publicly released comment-ID, index, annotated-sample, and metadata files.
 
 The data dictionary contains the following fields:
 
 - `column_name`: Exact column header used in the corpus.
 - `file_scope`: Indicates where the column is used.
-  - `both`: Appears in the private master comment file and in the public release.
-  - `public_only`: Appears in a public index, annotated sample, or metadata file but is not a column in the private master comment file.
+  - `both`: Appears in at least one private research file and at least one public release file.
+  - `public_only`: Appears only in a public index, annotated sample, or metadata file.
   - `private_only`: Retained only in private research files and excluded from the public release.
 - `data_type`: Expected type of data, such as text, integer, date, or datetime.
 - `format_or_values`: Required format, permitted values, or an example value.
@@ -48,7 +48,7 @@ The small annotated sample will illustrate the application of the emoji annotati
 
 ## Engagement metrics
 
-`likes_count` and `reply_count` represent the values visible when the data were observed. They must be interpreted together with `metrics_last_observed`.
+`like_count` and `reply_count` represent the values visible when the data were observed. They must be interpreted together with `metrics_last_observed`.
 
 ## Election-site codes
 
